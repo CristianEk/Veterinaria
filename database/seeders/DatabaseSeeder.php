@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             RoomSeeder::class,
             VeterinarianSeeder::class,
             PetSeeder::class,
+            AppointmentSeeder::class,
         ]);
     }
 }

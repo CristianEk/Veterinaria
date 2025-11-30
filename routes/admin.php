@@ -22,3 +22,5 @@ Route::resource('rooms',RoomController::class);
 Route::resource('veterinarians',VeterinarianController::class);
 //Gestion de mascotas
 Route::resource('pets',PetController::class);
+//Gestion de citas
+Route::resource('appointments',App\Http\Controllers\Admin\AppointmentController::class);

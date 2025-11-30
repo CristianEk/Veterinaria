@@ -36,24 +36,24 @@
                 </div>
                 
                 {{-- 2. HORA DE INICIO --}}
-                <x-wire-input 
-                    label="Horario de entrada" 
-                    name="start_time" 
-                    type="time"
-                    placeholder="HH:MM" 
-                    value="{{ old('start_time', $veterinarian->start_time)}}"
-                >
-                </x-wire-input>
+                    <x-wire-input 
+                        label="Horario de entrada" 
+                        name="start_time" 
+                        type="time"
+                        placeholder="HH:MM" 
+                        {{-- Solución: Aseguramos que el valor cargado sea HH:MM --}}
+                        value="{{ old('start_time', substr($veterinarian->start_time, 0, 5)) }}"
+                    />
 
-                {{-- 3. HORA DE FIN --}}
-                <x-wire-input 
-                    label="Hora de salida" 
-                    name="end_time" 
-                    type="time"
-                    placeholder="HH:MM" 
-                    value="{{ old('end_time', $veterinarian->end_time)}}"
-                >
-                </x-wire-input>
+                    {{-- 3. HORA DE FIN --}}
+                    <x-wire-input 
+                        label="Hora de salida" 
+                        name="end_time" 
+                        type="time"
+                        placeholder="HH:MM" 
+                        {{-- Solución: Aseguramos que el valor cargado sea HH:MM --}}
+                        value="{{ old('end_time', substr($veterinarian->end_time, 0, 5)) }}"
+                    />
             </div>
             
             <div class="flex justify-end mt-8">

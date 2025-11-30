@@ -14,8 +14,14 @@ class Room extends Model
         'available',
     ];
 
+    
     // Por convención, se asegura que 'available' sea un booleano
     protected $casts = [
         'available' => 'boolean',
     ];
+
+    public function appointments()
+    {
+        return $this->hasMany(Appointment::class);
+    }
 }

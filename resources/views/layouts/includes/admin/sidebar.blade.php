@@ -22,8 +22,16 @@
             'name' => 'Usuarios',
             'icon' => 'fa-solid fa-user',
             'href' => route('admin.users.index'),
-            //'active' => request()->routeIs('admin.users.*')
-            'active' => false,
+            'active' => request()->routeIs('admin.users.*')
+            //'active' => false,
+        ],
+                [
+            //se agrego el link de usuarios
+            'name' => 'Consultorios',
+            'icon' => 'fa-solid fa-house-medical-circle-check',
+            'href' => route('admin.rooms.index'),
+            'active' => request()->routeIs('admin.rooms.*')
+            //'active' => false,
         ],
     ];
 @endphp

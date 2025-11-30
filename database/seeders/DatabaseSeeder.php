@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
         //LLamar a RoleSeeder
         $this -> call([
             RoleSeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+            RoomSeeder::class,
         ]);
     }
 }

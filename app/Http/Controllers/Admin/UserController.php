@@ -101,8 +101,9 @@ class UserController extends Controller
 
             return redirect()->route('admin.users.index');
         }
+        $roles = Role::pluck('name', 'name')->toArray();
 
-        return view('admin.users.edit', compact('user'));
+        return view('admin.users.edit', compact('user', 'roles'));
     }
 
     /**

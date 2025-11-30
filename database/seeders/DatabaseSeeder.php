@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UserSeeder::class,
             RoomSeeder::class,
+            VeterinarianSeeder::class,
+            PetSeeder::class,
         ]);
     }
 }

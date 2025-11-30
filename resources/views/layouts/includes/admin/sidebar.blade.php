@@ -18,19 +18,40 @@
             //'active' => false,
         ],
         [
-            //se agrego el link de usuarios
+            
             'name' => 'Usuarios',
             'icon' => 'fa-solid fa-user',
             'href' => route('admin.users.index'),
             'active' => request()->routeIs('admin.users.*')
             //'active' => false,
         ],
-                [
-            //se agrego el link de usuarios
+        [
+            
             'name' => 'Consultorios',
             'icon' => 'fa-solid fa-house-medical-circle-check',
             'href' => route('admin.rooms.index'),
             'active' => request()->routeIs('admin.rooms.*')
+            //'active' => false,
+        ],
+        [     
+            'name' => 'Veterinarios',
+            'icon' => 'fa-solid fa-user-doctor',
+            'href' => route('admin.veterinarians.index'),
+            'active' => request()->routeIs('admin.veterinarians.*')
+            //'active' => false,
+        ],
+        [     
+            'name' => 'Mascotas',
+            'icon' => 'fa-solid fa-paw',
+            'href' => route('admin.pets.index'),
+            'active' => request()->routeIs('admin.pets.*')
+            //'active' => false,
+        ],
+        [     
+            'name' => 'Citas',
+            'icon' => 'fa-solid fa-calendar-check',
+            'href' => route('admin.appointments.index'),
+            'active' => request()->routeIs('admin.appointments.*')
             //'active' => false,
         ],
     ];

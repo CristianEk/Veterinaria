@@ -8,6 +8,7 @@ use App\Models\User;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
+use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {

@@ -8,7 +8,7 @@
             'active' => request()->routeIs('admin.dashboard'),
         ],
         [
-            'header' => 'Manage Page',
+            'header' => 'Administrar páginas',
         ],
         [
             'name' => 'Roles y Permisos',

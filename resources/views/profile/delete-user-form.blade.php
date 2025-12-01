@@ -1,20 +1,20 @@
 <x-action-section>
     <x-slot name="title">
-        {{ __('Delete Account') }}
+        {{ __('Borrar cuenta') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Permanently delete your account.') }}
+        {{ __('Borrar cuenta permanentemente.') }}
     </x-slot>
 
     <x-slot name="content">
         <div class="max-w-xl text-sm text-gray-600">
-            {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
+            {{ __('Una vez que tu cuenta sea eliminada, todos sus recursos y datos serán borrados permanentemente. Antes de eliminar tu cuenta, por favor descarga cualquier dato o información que desees conservar.') }}
         </div>
 
         <div class="mt-5">
             <x-danger-button wire:click="confirmUserDeletion" wire:loading.attr="disabled">
-                {{ __('Delete Account') }}
+                {{ __('Borrar cuenta') }}
             </x-danger-button>
         </div>
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RoomController;
 use App\Http\Controllers\Admin\VeterinarianController;
 use App\Http\Controllers\Admin\PetController;
+use App\Http\Controllers\Admin\AppointmentController;
 
 Route::get('/', function(){
     return view('admin.dashboard');
@@ -23,4 +24,4 @@ Route::resource('veterinarians',VeterinarianController::class);
 //Gestion de mascotas
 Route::resource('pets',PetController::class);
 //Gestion de citas
-Route::resource('appointments',App\Http\Controllers\Admin\AppointmentController::class);
+Route::resource('appointments',AppointmentController::class);

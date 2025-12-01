@@ -57,15 +57,20 @@
             />
 
             {{-- 4. CAMPO ESTADO (Booleano: Atendido/No Atendido) --}}
-            <div class="mt-4">
-                <x-wire-checkbox
-                    label="¿Atendido (Disponible para más atención)?" 
-                    name="available" 
-                    value="1" 
-                    {{-- Carga el estado actual ($pet->available) o el valor del old input --}}
-                    checked="{{ old('available', $pet->available) }}"
-                />
-            </div>
+                <label for="available" class="block font-medium text-sm text-gray-700">Estado</label>
+                    <select 
+                        name="available" 
+                        id="available"
+                        class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full mt-1"
+                    >
+                        <option value="">Selecciona un estado</option>
+                        <option value="1" {{ old('available') == '1' ? 'selected' : '' }}>Disponible</option>
+                        <option value="0" {{ old('available') == '0' ? 'selected' : '' }}>No disponible</option>
+                    </select>
+
+                    @error('available') 
+                        <p class="text-sm text-red-600 mt-2">{{ $message }}</p> 
+                    @enderror
             
             <div class="flex justify-end mt-6">
                 <x-wire-button type="submit" blue>

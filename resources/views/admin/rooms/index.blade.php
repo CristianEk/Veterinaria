@@ -1,4 +1,4 @@
-<x-admin-layout title="Consultorios | Healthify" :breadcrumbs="[
+<x-admin-layout title="Consultorios | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('admin.dashboard')],
     

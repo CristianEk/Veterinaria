@@ -1,4 +1,4 @@
-<x-veterinarians-layout title="Consultas | Healthify" :breadcrumbs="[
+<x-veterinarians-layout title="Consultas | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('veterinarians.dashboard')],
     

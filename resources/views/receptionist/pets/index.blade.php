@@ -1,4 +1,4 @@
-<x-receptionist-layout title="Mascotas | Healthify" :breadcrumbs="[
+<x-receptionist-layout title="Mascotas | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('receptionist.dashboard')],
     

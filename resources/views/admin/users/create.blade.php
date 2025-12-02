@@ -1,4 +1,4 @@
-<x-admin-layout tittle="Usuarios | Healthify" :breadcrumbs="[
+<x-admin-layout tittle="Usuarios | Colitas y Bigotes" :breadcrumbs="[
     [
         'name' => 'Dashboard',
         'href' => route('admin.dashboard')

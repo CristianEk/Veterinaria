@@ -1,4 +1,4 @@
-<x-receptionist-layout title="Consultas | Healthify" :breadcrumbs="[
+<x-receptionist-layout title="Consultas | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('receptionist.dashboard')],
     

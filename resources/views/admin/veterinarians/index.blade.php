@@ -1,4 +1,4 @@
-<x-admin-layout title="Veterinarios | Healthify" :breadcrumbs="[
+<x-admin-layout title="Veterinarios | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('admin.dashboard')],
     

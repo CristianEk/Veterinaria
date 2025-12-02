@@ -1,4 +1,4 @@
-<x-owners-layout title="Mascotas | Healthify" :breadcrumbs="[
+<x-owners-layout title="Mascotas | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('owners.dashboard')],
     

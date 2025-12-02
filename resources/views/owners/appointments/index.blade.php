@@ -1,4 +1,4 @@
-<x-owners-layout title="Consultas | Healthify" :breadcrumbs="[
+<x-owners-layout title="Consultas | Colitas y Bigotes" :breadcrumbs="[
     ['name' => 'Dashboard', 
     'href' => route('owners.dashboard')],
     
